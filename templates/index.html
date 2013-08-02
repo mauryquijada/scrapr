@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Scrapr</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="col-lg-6" style="margin: 0 auto; float: none; text-align: center;">
+      <p style="padding: 30px;">I, Scrapr am minion existing solely for Bianca St. Louis, 
+      of CODE2040, to scrape table data from ASEE.org's pages on college 
+      profile statistics. You give me a link to the college profile you 
+      want an Excel file for, and I'll eat it up and spit out a download
+      with all of the tables neatly organized.</p>
+      <p style="padding: 0 30px;"><em>Made with <img 
+        src="http://the-dream.co.uk/images/heart_icon.png" width="15px" /> 
+        by Maury Quijada</em></p>
+      <h1>Give me a URL to parse!</h1>
+      <div class="input-group">
+        <form method="POST" action="/scrapr" style="width: 100%;">
+          <input name="url" type="text" class="form-control">
+          <span class="input-group-btn">
+            <input class="btn btn-default btn-large" type="submit" value="Scrape It!"/>
+          </span>
+        </form>
+      </div>
+    </div>
+
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <!-- Optionally enable responsive features in IE8 -->
+    <script src="/static/js/respond.js"></script>
+  </body>
+</html>
