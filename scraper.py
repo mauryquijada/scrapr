@@ -59,7 +59,7 @@ def parse():
 			csvWriter.writerow([])
 	csvFile.close()
 
-	return redirect(url_for("tools/static", filename=csvFilename))
+	return redirect(url_for("static", filename=csvFilename))
 
 
 if __name__ == "__main__":
